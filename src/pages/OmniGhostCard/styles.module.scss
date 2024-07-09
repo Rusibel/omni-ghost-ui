@@ -9,6 +9,7 @@
 .card_page {
   background-color: rgba(255, 255, 255, 1);
   padding: 16px;
+  border-radius: 14px;
 }
 
 .card__item_colm {
@@ -21,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(210, 212, 217, 1);
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .card__item:last-child {
@@ -29,33 +30,17 @@
 }
 
 .card__item_title {
-  font-family: 'Moscow';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.2px;
+  @include font-moscow-sans-l-bold;
   margin: 0;
 }
 
 .card__item_subtitle {
-  font-family: 'Moscow Light';
-  font-weight: 300;
-  font-style: italic;
-  font-size: 12px;
-  line-height: 14.4px;
+  @include font-small-light;
   margin: 0;
   color: rgba(119, 121, 133, 1);
 }
 
 .card__info_button {
-  background: rgba(230, 240, 255, 1);
-  color: rgba(29, 73, 136, 1);
-  font-family: 'Moscow';
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 15.4px;
-  border-radius: 10px;
-  border: none;
-  width: 141px;
   height: 40px;
 }
 
@@ -75,15 +60,6 @@
 }
 
 .card__close_lock {
-  background: rgba(230, 240, 255, 1);
-  color: rgba(29, 73, 136, 1);
-  font-family: 'Moscow';
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 15.4px;
-  border-radius: 10px;
-  border: none;
-  width: 141px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -92,15 +68,6 @@
 }
 
 .card__open_lock {
-  background: rgba(230, 240, 255, 1);
-  color: rgba(29, 73, 136, 1);
-  font-family: 'Moscow';
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 15.4px;
-  border-radius: 10px;
-  border: none;
-  width: 170px;
   height: 40px;
   display: flex;
   align-items: center;

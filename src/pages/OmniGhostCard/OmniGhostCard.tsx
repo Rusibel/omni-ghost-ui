@@ -6,7 +6,7 @@ import { ReactComponent as BatteryLogo } from 'src/assets/icons/Battery.svg';
 import { ReactComponent as LockLogo } from 'src/assets/icons/lock.svg';
 import { ReactComponent as WheelLogo } from 'src/assets/icons/wheel.svg';
 import { ReactComponent as PointerLogo } from 'src/assets/icons/card-return-button.svg';
-import { MainLayout } from 'src/base/components';
+import { MainLayout, Button } from 'src/base/components';
 
 export const OmniGhostCard = (): ReactElement => {
   return (
@@ -29,12 +29,13 @@ export const OmniGhostCard = (): ReactElement => {
               <h2 className={styles.card__item_title}>55.761811, 37.610116</h2>
               <p className={styles.card__item_subtitle}>координаты</p>
             </div>
-            <button
+            <Button
               className={styles.card__info_button}
-              /*  onClick={() => setIsAboutOpen(true)}*/
+              theme="secondary"
+              size="xs"
             >
-              Вся информация
-            </button>
+              <span>Вся информация</span>
+            </Button>
           </div>
           <div className={styles.card__item}>
             <div className={styles.card__item_colm}>
@@ -68,10 +69,14 @@ export const OmniGhostCard = (): ReactElement => {
               <h2 className={styles.card__item_title}>Отстёгнут</h2>
               <p className={styles.card__item_subtitle}>состояние троса</p>
             </div>
-            <button className={styles.card__close_lock}>
+            <Button
+              className={styles.card__close_lock}
+              theme="secondary"
+              size="xs"
+            >
               <LockLogo />
-              <span className={styles.button_text}>Замок троса</span>
-            </button>
+              <span>Замок троса</span>
+            </Button>
           </div>
           <div className={styles.card__item}>
             <div className={styles.card__item_colm}>
@@ -80,10 +85,14 @@ export const OmniGhostCard = (): ReactElement => {
                 состояние замка-подковы
               </p>
             </div>
-            <button className={styles.card__open_lock}>
+            <Button
+              className={styles.card__open_lock}
+              theme="secondary"
+              size="s"
+            >
               <WheelLogo />
-              <span className={styles.button_text}>Замок на колесе</span>
-            </button>
+              <span className={styles.card__button_text}>Замок на колесе</span>
+            </Button>
           </div>
           <div className={styles.card__item}>
             <div className={styles.card__item_colm}>
