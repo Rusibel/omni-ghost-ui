@@ -7,6 +7,7 @@ import { ViewComponentContainer } from 'src/modules/components/containers/ViewCo
 import { EditComponentContainer } from 'src/modules/components/containers/EditComponentContainer';
 
 import { WelcomePage } from 'src/pages/Welcome';
+import { OmniGhostCard } from 'src/pages/OmniGhostCard';
 
 export const AppRoutes: FC = () => {
   return (
@@ -20,6 +21,7 @@ export const AppRoutes: FC = () => {
         element={<EditComponentContainer />}
       />
       <Route path={routeHome.fullPath} element={<WelcomePage />} />
+      <Route path="/omni-card" element={<OmniGhostCard />} />
     </Routes>
   );
 };

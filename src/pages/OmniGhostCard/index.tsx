@@ -1,0 +1,1 @@
+export { OmniGhostCard } from './OmniGhostCard';
