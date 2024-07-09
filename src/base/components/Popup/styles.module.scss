@@ -1,5 +1,6 @@
 @import 'src/styles/variables/index.scss';
 @import 'src/styles/mixins/animation.scss';
+@import 'src/styles/mixins/typography.scss';
 
 .VBOverlay {
   background: rgba(0, 0, 0, 0.5);
@@ -52,6 +53,7 @@
       gap: 12px;
 
       &__title {
+        @include font-moscow-sans-xl-bold;
         font-weight: 700;
         font-size: 18px;
         line-height: 120%;
@@ -89,6 +91,7 @@
       gap: 12px;
 
       button {
+        @include font-moscow-sans-l-light;
         margin: 0 auto;
       }
     }
