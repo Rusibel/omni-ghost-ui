@@ -1,4 +1,5 @@
 @import 'src/styles/variables/index.scss';
+@import 'src/styles/mixins/typography.scss';
 
 .LPButton {
   max-width: 500px;
@@ -16,6 +17,7 @@
   }
 
   &_secondary {
+    @include font-moscow-sans-bold-m;
     background-color: $BUTTON_SECONDARY_BG;
     color: $BUTTON_SECONDARY_TEXT;
   }

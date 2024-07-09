@@ -1,0 +1,96 @@
+@import 'src/styles/variables/index.scss';
+@import 'src/styles/mixins/typography.scss';
+
+.card__layout {
+  background: $LIGHT_GREY;
+  height: 100vh;
+}
+
+.card_page {
+  background-color: $WHITE;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.card__item_colm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $PALE_GREY;
+  padding: 16px 0;
+}
+
+.card__item:last-child {
+  border-bottom: none;
+}
+
+.card__item_title {
+  @include font-moscow-sans-l-bold;
+  margin: 0;
+}
+
+.card__item_subtitle {
+  @include font-small-light;
+  margin: 0;
+  color: $GREY;
+}
+
+.card__info_button {
+  height: 40px;
+}
+
+.card__return_button {
+  background-image: url('../../assets/card-return-button.svg');
+  width: 16px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.card__item_battery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.card__close_lock {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4.5px;
+}
+
+.card__open_lock {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4.5px;
+}
+
+.card__popup_text {
+  @include font-moscow-sans-l-light;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+
+.card__info_item {
+  margin-top: 8px;
+}
+
+.card__detail {
+  @include font-moscow-sans-l-bold;
+}
